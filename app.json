@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Smart Parking",
+    "slug": "smart-parking",
+    "version": "1.0.0",
+    "scheme": "smartparking",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "vn.smartparking.demo"
+    },
+    "android": {
+      "package": "vn.smartparking.demo"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Cho phép Smart Parking chụp biển số để ghi nhận xe vào và ra bãi.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-sqlite",
+      "expo-image",
+      "expo-font",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
